@@ -21,3 +21,20 @@
 		}
 	]
 }'
+
+#Swagger
+Tambien se puede testear abriendo la url de swagger http://localhost:8080/swagger-ui/# luego seleccionar el post /user/v1, 
+luego el boton try out y agregar la data json y presionar el boton execute.
+
+{
+	"name": "Juan Rodriguez",
+	"email": "juan@rodriguez.org",
+	"password": "Ahunter22",
+	"phones": [
+		{
+			"number": "1234567",
+			"citycode": "1",
+			"contrycode": "57"
+		}
+	]
+}
