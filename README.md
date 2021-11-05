@@ -3,7 +3,7 @@
  
 # Instalación
  Ir a la carpeta executable y descomprimir el archivo technical-test-0.0.1-SNAPSHOT.jar.zip, 
- luego dar permisos de ejecución a los archivos start.sh y stop.sh luego ejecutar el comando ./start.sh para levantar el servicio
+ luego dar permisos de ejecución a los archivos start.sh y stop.sh luego ejecutar el comando ./start.sh 8080 para levantar el servicio
  
 # Datos de pruebas
  Ejecutar prueba a través del siguiente curl:
