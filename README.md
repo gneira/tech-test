@@ -1,11 +1,11 @@
-#Ejercicio pre proceso
+# Ejercicio pre proceso
  Este es un ejercicio para validar conocimientos en una pre prueba de selección
  
-#Instalación
+# Instalación
  Ir a la carpeta executable y descomprimir el archivo technical-test-0.0.1-SNAPSHOT.jar.zip, 
  luego dar permisos de ejecución a los archivos start.sh y stop.sh luego ejecutar el comando ./start.sh para levantar el servicio
  
-#Datos de pruebas
+# Datos de pruebas
  Ejecutar prueba a través del siguiente curl:
  curl --location --request POST 'http://localhost:8080/user/v1' \
 --header 'Content-Type: application/json' \
@@ -22,7 +22,7 @@
 	]
 }'
 
-#Swagger
+# Swagger
 Tambien se puede testear abriendo la url de swagger http://localhost:8080/swagger-ui/# luego seleccionar el post /user/v1, 
 luego el boton try out y agregar la data json y presionar el boton execute.
 
