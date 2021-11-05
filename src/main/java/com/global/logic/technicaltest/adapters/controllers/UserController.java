@@ -12,15 +12,11 @@ import com.global.logic.technicaltest.util.Validations;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/user/v1")
@@ -47,11 +43,8 @@ public class UserController {
     this.mapper = mapper;
   }
 
-  @PostMapping(
-      consumes = {MediaType.APPLICATION_JSON_VALUE},
-      produces = {MediaType.APPLICATION_JSON_VALUE}
-  )
-  public ResponseEntity createOrUpdateEmployee(UserRequest userRequest) {
+  @PostMapping
+  public ResponseEntity createOrUpdateEmployee(@RequestBody UserRequest userRequest) {
     log.info("The creation flow begins");
     UserResponse userResponse;
     try {
